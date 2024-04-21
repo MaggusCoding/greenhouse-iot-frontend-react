@@ -6,6 +6,7 @@ export default function Dashboard() {
     return (
         <div>
             Hello, Dashboard!
+            <Temperature></Temperature>
         </div>
     );
 }
