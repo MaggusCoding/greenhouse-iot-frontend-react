@@ -1,4 +1,4 @@
-import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import {collection, getDocs } from 'firebase/firestore';
 import { Temperature } from "../models/temperature";
 import db from "../services/firebaseConfig"
 

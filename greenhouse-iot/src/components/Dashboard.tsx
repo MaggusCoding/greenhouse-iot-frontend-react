@@ -1,11 +1,11 @@
-import Temperature from "../components/Temperature";
+import Temperature from "./Temperature.tsx";
+import '../output.css';
 export default function Dashboard() {
 
 
     return (
         <div>
-            <p>Hello, Dashboard!</p>
-            <Temperature></Temperature>
+            Hello, Dashboard!
         </div>
     );
 }
