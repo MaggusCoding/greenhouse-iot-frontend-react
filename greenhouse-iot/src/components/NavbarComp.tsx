@@ -3,7 +3,9 @@ const NavbarComp = () => {
     return (
         <Navbar isBordered>
             <NavbarBrand>
+                <Link color="foreground" href="/">
                 My Greenhouse
+                </Link>
             </NavbarBrand>
             <NavbarContent className="sm:flex gap-4" justify="center">
                 <NavbarItem>
