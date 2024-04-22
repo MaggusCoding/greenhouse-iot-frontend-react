@@ -31,6 +31,7 @@ export default {
                             DEFAULT: "#12A150",
                             foreground: "#ffffff",
                         },
+                        secondary: "#66bd84",
                         light: "#99d3ad",
                         focus: "#0d8140",  // A focus state color that's slightly darker
                     },

@@ -3,19 +3,19 @@ const NavbarComp = () => {
     return (
         <Navbar isBordered>
             <NavbarBrand>
-                <Link color="foreground" href="/">
+                <Link color="primary" href="/">
                     <img src="/greenhouse.png" alt="My Greenhouse Logo" style={{height: '50px', marginRight: '10px'}}/>
-                    My Greenhouse
+                    IOT Greenhouse
                 </Link>
             </NavbarBrand>
             <NavbarContent className="sm:flex gap-4" justify="center">
             <NavbarItem>
-                    <Link color="foreground" href="/dashboard">
+                    <Link color="primary" href="/dashboard">
                         Dashboard
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="#">
+                    <Link color="primary" href="#">
                         Integrations
                     </Link>
                 </NavbarItem>
