@@ -1,5 +1,9 @@
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
-const NavbarComp = () => {
+import {useState} from "react";
+
+    const NavbarComp = () => {
+
+      const [menuOpen, setIsOpen] = useState(false);
     return (
         <Navbar isBordered>
             <NavbarBrand>
@@ -8,7 +12,36 @@ const NavbarComp = () => {
                     IOT Greenhouse
                 </Link>
             </NavbarBrand>
-            <NavbarContent className="sm:flex gap-4" justify="center">
+            {/* Aligning the button and dropdown to the right */}
+            <div className="lg:hidden absolute right-0">  {/* Added relative positioning */}
+                <Button auto ghost onClick={() => setIsOpen(!menuOpen)}>
+                    ☰
+                </Button>
+                {/* Dropdown menu content positioned absolutely to the right */}
+                <div className={`absolute right-0 top-full w-48 bg-background shadow-md border-black border-3 ${menuOpen ? 'block' : 'hidden'}`}>
+                    <NavbarContent className="flex flex-col">
+                        <NavbarItem>
+                            <Link color="primary" href="/dashboard">
+                                Dashboard
+                            </Link>
+                        </NavbarItem>
+                        <NavbarItem>
+                            <Link color="primary" href="#">
+                                Integrations
+                            </Link>
+                        </NavbarItem>
+                        <NavbarItem>
+                            <Link href="#">Login</Link>
+                        </NavbarItem>
+                        <NavbarItem>
+                            <Button as={Link} color="primary" href="#" variant="flat">
+                                Sign Up
+                            </Button>
+                        </NavbarItem>
+                    </NavbarContent>
+                </div>
+            </div>
+            <NavbarContent className="sm:flex gap-4 hidden lg:flex" justify="center">
             <NavbarItem>
                     <Link color="primary" href="/dashboard">
                         Dashboard
