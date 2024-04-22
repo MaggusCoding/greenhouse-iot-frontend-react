@@ -3,12 +3,13 @@ const NavbarComp = () => {
     return (
         <Navbar isBordered>
             <NavbarBrand>
-                <Link color="foreground" href="/greenhouse-iot/public">
-                My Greenhouse
+                <Link color="foreground" href="/">
+                    <img src="/greenhouse.png" alt="My Greenhouse Logo" style={{height: '50px', marginRight: '10px'}}/>
+                    My Greenhouse
                 </Link>
             </NavbarBrand>
             <NavbarContent className="sm:flex gap-4" justify="center">
-                <NavbarItem>
+            <NavbarItem>
                     <Link color="foreground" href="/dashboard">
                         Dashboard
                     </Link>
