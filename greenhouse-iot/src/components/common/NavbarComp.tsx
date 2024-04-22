@@ -3,7 +3,7 @@ const NavbarComp = () => {
     return (
         <Navbar isBordered>
             <NavbarBrand>
-                <Link color="foreground" href="/">
+                <Link color="foreground" href="/greenhouse-iot/public">
                 My Greenhouse
                 </Link>
             </NavbarBrand>

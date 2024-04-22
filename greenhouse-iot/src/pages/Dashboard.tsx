@@ -1,4 +1,4 @@
-import Temperature from "./Temperature.tsx";
+import Temperature from "../components/temperature/Temperature.tsx";
 import '../output.css';
 import {Button} from "@nextui-org/react";
 export default function Dashboard() {

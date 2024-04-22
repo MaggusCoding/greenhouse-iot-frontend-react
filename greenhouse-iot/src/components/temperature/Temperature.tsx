@@ -1,8 +1,8 @@
 'use client'
 import { useEffect, useState } from 'react';
-import { getTemperatureData } from '../services/temperatureService';
-import { Temperature } from '../models/temperature';
-import formatFirestoreTimestamp from "../utilities/formatDate";
+import { getTemperatureData } from '../../services/temperatureService.ts';
+import { Temperature } from '../../models/temperature.ts';
+import formatFirestoreTimestamp from "../../utilities/formatDate.ts";
 const TemperatureComponent = () => {
     const [temperatures, setTemperatures] = useState<Temperature[]>([]);
 

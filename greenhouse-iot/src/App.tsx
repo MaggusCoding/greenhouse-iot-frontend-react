@@ -1,7 +1,7 @@
 import {Routes, Route, useNavigate} from 'react-router-dom';
-import NavbarComp from './components/NavbarComp.tsx';
-import Home from './components/Home';
-import Dashboard from './components/Dashboard';
+import NavbarComp from './components/common/NavbarComp.tsx';
+import Home from './pages/Home.tsx';
+import Dashboard from './pages/Dashboard.tsx';
 import {NextUIProvider} from "@nextui-org/react";
 
 function App() {
