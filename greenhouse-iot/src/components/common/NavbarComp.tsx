@@ -4,7 +4,7 @@ import {useState} from "react";
     const NavbarComp = () => {
 
       const [menuOpen, setIsOpen] = useState(false);
-    return (
+        return (
         <Navbar isBordered>
             <NavbarBrand>
                 <Link color="primary" href="/">
@@ -14,7 +14,7 @@ import {useState} from "react";
             </NavbarBrand>
             {/* Aligning the button and dropdown to the right */}
             <div className="lg:hidden absolute right-0">  {/* Added relative positioning */}
-                <Button auto ghost onClick={() => setIsOpen(!menuOpen)}>
+                <Button color="primary" auto ghost onClick={() => setIsOpen(!menuOpen)}>
                     ☰
                 </Button>
                 {/* Dropdown menu content positioned absolutely to the right */}

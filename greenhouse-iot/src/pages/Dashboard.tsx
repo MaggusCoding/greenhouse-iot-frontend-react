@@ -1,13 +1,10 @@
-import Temperature from "../components/temperature/Temperature.tsx";
-import {Button} from "@nextui-org/react";
+import TemperatureChart from "../components/temperature/TemperatureChart.tsx";
 export default function Dashboard() {
 
 
     return (
-        <div>
-            <Button color="primary"> Drück mich hoch</Button>
-            Hello, Dashboard!
-            <Temperature></Temperature>
+        <div className="flex min-h-screen p-4">
+            <TemperatureChart></TemperatureChart>
         </div>
     );
 }
