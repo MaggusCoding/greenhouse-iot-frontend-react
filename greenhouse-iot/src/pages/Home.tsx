@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <div className="flex flex-col justify-between min-h-screen p-4">
             <header className="mt-20 text-center text-primary">
-                <h1 className="text-3xl md:text-5xl font-bold">
+                <h1 className="text-3xl md:text-6xl font-bold">
                     The IOT solution for your Greenhouse
                 </h1>
                 <Divider className="my-5 mx-auto max-w-2xl" />  {/* Center the Divider */}

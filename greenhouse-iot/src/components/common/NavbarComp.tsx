@@ -7,14 +7,14 @@ import {useState} from "react";
         return (
         <Navbar isBordered>
             <NavbarBrand>
-                <Link color="primary" href="/">
+                <Link className="font-bold" color="primary" href="/">
                     <img src="/greenhouse.png" alt="My Greenhouse Logo" style={{height: '50px', marginRight: '10px'}}/>
                     IOT Greenhouse
                 </Link>
             </NavbarBrand>
             {/* Aligning the button and dropdown to the right */}
             <div className="lg:hidden absolute right-0">  {/* Added relative positioning */}
-                <Button color="primary" auto ghost onClick={() => setIsOpen(!menuOpen)}>
+                <Button color="primary"  onClick={() => setIsOpen(!menuOpen)}>
                     ☰
                 </Button>
                 {/* Dropdown menu content positioned absolutely to the right */}
@@ -43,22 +43,22 @@ import {useState} from "react";
             </div>
             <NavbarContent className="sm:flex gap-4 hidden lg:flex" justify="center">
             <NavbarItem>
-                    <Link color="primary" href="/dashboard">
+                    <Link className="font-bold" color="primary" href="/dashboard">
                         Dashboard
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="primary" href="#">
+                    <Link className="font-bold" color="primary" href="#">
                         Integrations
                     </Link>
                 </NavbarItem>
             </NavbarContent>
             <NavbarContent justify="end">
                 <NavbarItem className="hidden lg:flex">
-                    <Link href="#">Login</Link>
+                    <Link className="font-bold" href="#">Login</Link>
                 </NavbarItem>
                 <NavbarItem className="hidden lg:flex">
-                    <Button as={Link} color="primary" href="#" variant="flat">
+                    <Button className="font-bold" as={Link} color="primary" href="#" variant="flat">
                         Sign Up
                     </Button>
                 </NavbarItem>

@@ -23,15 +23,15 @@ const TemperatureChart = () => {
     }, []);
 
     return (
-        <div className="bg-background p-4 rounded-lg shadow-lg" style={{ width: '100%', height: '400px' }}>
+        <div className="bg-primary-100 p-4 rounded-lg shadow-lg " style={{ width: '100%', height: '300px' }} >
             <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={temperatures} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="time" />
-                    <YAxis />
+                    <CartesianGrid strokeDasharray="3 3" stroke="#064120" />
+                    <XAxis dataKey="time" axisLine={{ stroke: "#064120" }} tick={{ fill: "#064120" }}/>
+                    <YAxis  axisLine={{ stroke: "#064120" }} tick={{ fill: "#064120" }}/>
                     <Tooltip />
-                    <Legend />
-                    <Line type="monotone" dataKey="temperature" stroke="#8884d8" activeDot={{ r: 8 }} />
+                    <Legend stroke="#064120"/>
+                    <Line type="monotone" dataKey="temperature" stroke="#064120" activeDot={{ r: 8 }} />
                 </LineChart>
             </ResponsiveContainer>
         </div>

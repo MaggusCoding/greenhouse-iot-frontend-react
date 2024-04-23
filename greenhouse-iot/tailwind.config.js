@@ -12,11 +12,11 @@ export default {
     plugins: [
         nextui({
             themes: {
-                "green-dark": {
-                    extend: "dark",  // Inherits default values from the dark theme
+                "green-light": {
+                    extend: "light",  // Inherits default values from the dark theme
                     colors: {
-                        background: "#081c15", // A darker green for the background
-                        foreground: "#ffffff", // Ensuring text and other elements are light for contrast
+                        foreground: "#064120",
+                        background: "#ffffff",
                         primary: {
                             50: "#e6f4ea",
                             100: "#cce9d6",
