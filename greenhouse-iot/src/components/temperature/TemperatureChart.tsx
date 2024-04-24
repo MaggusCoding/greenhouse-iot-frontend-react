@@ -24,12 +24,20 @@ const TemperatureChart = () => {
         fetchData();
     }, []);
 
+    const generateTicks = (data: TemperatureFormatted[]): string[] => {
+        return data.map(item => item.timeHour); // Returns an array of strings representing hours
+    };
+
     return (
         <div className="bg-primary-100 p-4 rounded-lg shadow-lg" style={{ width: '100%', height: '300px' }}>
             <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={temperatures} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#064120" />
-                    <XAxis dataKey="timeHour" axisLine={{ stroke: "#064120" }} tick={{ fill: "#064120" }}/>
+                    <XAxis dataKey="timeHour"
+                           axisLine={{ stroke: "#064120" }}
+                           tick={{ fill: "#064120" }}
+                           ticks={generateTicks(temperatures)}
+                           tickFormatter={tick => tick}/>
                     <YAxis axisLine={{ stroke: "#064120" }} tick={{ fill: "#064120" }}/>
                     <Tooltip />
                     <Legend />
