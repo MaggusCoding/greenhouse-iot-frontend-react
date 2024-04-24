@@ -1,6 +1,6 @@
 import { getNewestTemperatureData } from '../../services/temperatureService.ts';
 import { TemperatureFormatted } from '../../models/temperatureFormatted.ts';
-import formatFirestoreTimestamp from "../../utilities/formatDate.ts";
+import {formatFirestoreTimestampDate, formatFirestoreTimestampHour} from "../../utilities/formatDate.ts";
 import {useEffect, useState} from "react";
 import {Card, CardBody, CardFooter, CardHeader, Divider, Image} from "@nextui-org/react";
 
@@ -14,8 +14,9 @@ const CurrentTemperature = () => {
                 const item = rawData[0];  // First item only
                 setTemperature({
                     ...item,
-                    time: formatFirestoreTimestamp(item.time),
-                    temperature: item.temperature
+                    timeDate: formatFirestoreTimestampDate(item.time),
+                    temperature: item.temperature,
+                    timeHour: formatFirestoreTimestampHour(item.time)
                 });
             }
         };
@@ -42,7 +43,7 @@ const CurrentTemperature = () => {
             </CardBody>
             <Divider />
             <CardFooter>
-                <p className="text-sm">at {temperature?.time}</p>
+                <p className="text-sm">at {temperature?.timeDate} {temperature?.timeHour}</p>
             </CardFooter>
         </Card>
         </div>

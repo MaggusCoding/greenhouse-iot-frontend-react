@@ -2,6 +2,7 @@
 
 export interface TemperatureFormatted{
     id?: string;
-    time: string;
+    timeDate: string;
+    timeHour?: string;
     temperature: number;
 }
