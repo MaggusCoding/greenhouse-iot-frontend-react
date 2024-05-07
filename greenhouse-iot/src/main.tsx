@@ -9,7 +9,7 @@ import {BrowserRouter} from "react-router-dom";
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <BrowserRouter>
-            <main className="green-light text-foreground bg-background ui-sans-serif">
+            <main className="green-light text-foreground bg-grau ui-sans-serif">
                 <App/>
             </main>
         </BrowserRouter>

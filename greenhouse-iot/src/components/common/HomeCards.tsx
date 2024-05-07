@@ -2,7 +2,7 @@ import { Card, CardHeader, CardBody, Divider, Image } from "@nextui-org/react";
 
 export default function HomeCards() {
     return (
-        <div className="flex flex-wrap gap-4 md:gap-8 justify-center p-4 bg-background text-foreground">
+        <div className="flex flex-wrap gap-4 md:gap-8 justify-center p-4 bg-grau text-foreground">
             <Card className="bg-primary shadow-lg rounded-lg overflow-hidden max-w-sm border-primary-200">
                 <CardHeader className="flex items-center gap-3 p-4 bg-primary-600 text-primary-foreground rounded-t-lg">
                     <Image

@@ -34,9 +34,7 @@ import {useState} from "react";
                             <Link href="#">Login</Link>
                         </NavbarItem>
                         <NavbarItem>
-                            <Button as={Link} color="primary" href="#" variant="flat">
-                                Sign Up
-                            </Button>
+                            <Button color="secondary" className="text-background">Learn more</Button>
                         </NavbarItem>
                     </NavbarContent>
                 </div>
@@ -58,9 +56,7 @@ import {useState} from "react";
                     <Link className="font-bold" href="#">Login</Link>
                 </NavbarItem>
                 <NavbarItem className="hidden lg:flex">
-                    <Button className="font-bold" as={Link} color="primary" href="#" variant="flat">
-                        Sign Up
-                    </Button>
+                    <Button color="secondary" className="text-background">Sign up</Button>
                 </NavbarItem>
             </NavbarContent>
         </Navbar>

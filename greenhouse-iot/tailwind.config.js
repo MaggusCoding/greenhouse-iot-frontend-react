@@ -17,6 +17,7 @@ export default {
                     colors: {
                         foreground: "#064120",
                         background: "#ffffff",
+                        grau : "#e6eaf2",
                         primary: {
                             50: "#e6f4ea",
                             100: "#cce9d6",
